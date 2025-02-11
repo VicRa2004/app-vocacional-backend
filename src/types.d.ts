@@ -16,3 +16,5 @@ export type UserCreate = Omit<
   UserType,
   "id_user" | "createdAt" | "updatedAt" | "email_confirm" | "rol"
 >;
+
+export type UserUpdate = Omit<UserType, "id_user">;
